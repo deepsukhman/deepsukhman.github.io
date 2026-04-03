@@ -6,7 +6,7 @@
     <title>Sukhmandeep Singh | Independent Google Ads Consultant</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Playfair Display for authoritative headers, Inter for analytical body text -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -41,66 +41,182 @@
 </head>
 <body class="antialiased selection:bg-stone-900 selection:text-white">
 
-    <!-- Minimalist Navigation -->
-    <nav class="fixed w-full z-50 bg-stone-50/90 backdrop-blur-sm border-b border-stone-200">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-[#fafaf9]/90 backdrop-blur-sm border-b border-[#e7e5e4]">
         <div class="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="font-serif text-2xl font-semibold tracking-tight text-stone-900">Sukhmandeep.</div>
-            <div class="hidden md:flex space-x-10 text-sm font-medium tracking-wide text-stone-600">
-                <a href="#philosophy" class="hover:text-stone-900 transition-colors">Philosophy</a>
-                <a href="#methodology" class="hover:text-stone-900 transition-colors">Methodology</a>
+            <div class="font-serif text-2xl font-semibold tracking-tight text-[#1c1917]">Sukhmandeep.</div>
+            
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex space-x-10 text-sm font-medium tracking-wide text-[#57534e]">
+                <a href="#philosophy" class="hover:text-[#1c1917] transition-colors">Philosophy</a>
+                <a href="#methodology" class="hover:text-[#1c1917] transition-colors">Methodology</a>
             </div>
-            <a href="https://calendar.app.google/78D8qbSB7pizW5qL7" target="_blank" class="text-sm font-medium text-stone-900 border-b border-stone-900 pb-1 hover:text-stone-600 hover:border-stone-600 transition-colors">
-                Book a Consultation
-            </a>
+
+            <div class="flex items-center gap-4">
+                <a href="https://calendar.app.google/78D8qbSB7pizW5qL7" target="_blank" rel="noopener noreferrer"
+                   class="hidden sm:block text-sm font-medium text-[#1c1917] border-b border-[#1c1917] pb-1 hover:text-[#57534e] hover:border-[#57534e] transition-colors">
+                    Book a Consultation
+                </a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-stone-900">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-[#e7e5e4] p-6 flex flex-col space-y-4">
+            <a href="#philosophy" class="mobile-link text-lg font-serif">Philosophy</a>
+            <a href="#methodology" class="mobile-link text-lg font-serif">Methodology</a>
+            <a href="https://calendar.app.google/78D8qbSB7pizW5qL7" target="_blank" class="text-lg font-serif text-blue-600">Book Consultation</a>
         </div>
     </nav>
 
-    <!-- Editorial Hero Section -->
-    <section class="min-h-screen flex items-center justify-center px-6 pt-24">
-        <div class="max-w-4xl mx-auto text-center fade-in">
-            <p class="text-stone-500 tracking-[0.2em] text-xs font-semibold uppercase mb-8">Independent Consultant • Google Ads Ecosystem</p>
-            <h1 class="text-5xl md:text-7xl font-serif font-medium leading-tight mb-8 text-stone-900">
-                Architecting Growth Through <br>
-                <span class="italic text-stone-600">Structural Clarity.</span>
+    <!-- Visual Hero Section (Image Frame) -->
+    <!-- Note: Background color shifted to #111111 to better blend with your specific image -->
+    <section class="pt-32 pb-12 px-6 flex flex-col items-center justify-center bg-[#111111] text-white overflow-hidden border-b border-[#292524]">
+        <div class="max-w-5xl w-full flex justify-center py-12 md:py-20">
+            
+            <!-- Responsive Image Placeholder -->
+            <img src="hero-banner.png" 
+                 alt="Strategic Interface Line Art" 
+                 class="w-full h-auto max-w-4xl opacity-90 transition-transform duration-1000 hover:scale-[1.02]"
+                 onerror="this.onerror=null; this.outerHTML='<div class=\'text-stone-400 text-sm border border-stone-700 p-12 w-full text-center rounded border-dashed\'>[Upload hero-banner.png to your GitHub repository to display image here]</div>';">
+            
+        </div>
+    </section>
+
+    <!-- Copy Hero Section -->
+    <section class="py-20 px-6 text-center border-b border-[#e7e5e4] bg-white">
+        <div class="max-w-4xl mx-auto fade-in">
+            <p class="text-[#57534e] tracking-[0.2em] text-xs font-semibold uppercase mb-8">Independent Consultant • Google Ads Ecosystem</p>
+            <h1 class="text-5xl md:text-7xl font-serif font-medium leading-tight mb-8">
+                Architecting Growth Through <br />
+                <span class="italic text-[#57534e]">Structural Clarity.</span>
             </h1>
-            <p class="text-lg text-stone-600 font-light mb-12 max-w-2xl mx-auto leading-relaxed">
+            <p class="text-lg text-[#57534e] font-light mb-12 max-w-2xl mx-auto leading-relaxed">
                 I provide elite freelance strategy for businesses that demand more than basic campaign management. I integrate deep data analytics, structural engineering, and market psychology to build highly profitable advertising ecosystems.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-6">
-                <a href="https://calendar.app.google/78D8qbSB7pizW5qL7" target="_blank" class="px-8 py-4 bg-stone-900 text-stone-50 rounded-sm text-sm font-medium hover:bg-stone-800 transition-colors flex items-center justify-center gap-2">
+            <div class="flex justify-center gap-6">
+                <a href="https://calendar.app.google/78D8qbSB7pizW5qL7" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center gap-2 px-8 py-4 bg-[#1c1917] text-[#fafaf9] rounded-sm text-sm font-medium hover:bg-[#57534e] transition-all hover:scale-105">
                     Schedule a Strategy Call <i data-lucide="calendar" class="w-4 h-4"></i>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- The Philosophy Section -->
-    <section id="philosophy" class="py-24 px-6 bg-white border-y border-stone-200">
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="py-24 px-6 bg-white">
         <div class="max-w-5xl mx-auto grid md:grid-cols-12 gap-16 items-start">
             <div class="md:col-span-5">
-                <h2 class="text-4xl font-serif text-stone-900 mb-6 leading-tight">The Analytical <br>Advantage.</h2>
-                <div class="w-12 h-px bg-stone-900 mb-8"></div>
+                <h2 class="text-4xl font-serif text-[#1c1917] mb-6 leading-tight">The Analytical <br />Advantage.</h2>
+                <div class="w-12 h-px bg-[#1c1917] mb-8"></div>
             </div>
-            <div class="md:col-span-7 space-y-6 text-stone-600 font-light leading-relaxed text-lg">
+            <div class="md:col-span-7 space-y-6 text-[#57534e] font-light leading-relaxed text-lg">
                 <p>
-                    I am <strong class="font-medium text-stone-900">Sukhmandeep Singh</strong>, an independent Subject Matter Expert (SME) in the Google Ads ecosystem. I partner with select clients to provide high-level, freelance PPC management and strategic restructuring.
+                    I am <strong class="font-medium text-[#1c1917]">Sukhmandeep Singh</strong>, an independent Subject Matter Expert (SME) in the Google Ads ecosystem. I partner with select clients to provide high-level, freelance PPC management and strategic restructuring.
                 </p>
                 <p>
-                    With a deep foundation in behavioral marketing and structural data analysis, I possess a unique lens for interpreting the digital landscape. I treat consumer search behavior not as mere metrics, but as complex maps of human intent. This allows me to craft campaigns that intersect precisely with the practical and psychological needs of your target audience—transforming passive browsing into active conversion.
+                    With a deep foundation in behavioral marketing and structural data analysis, I possess a unique lens for interpreting the digital landscape. I treat consumer search behavior not as mere metrics, but as complex maps of human intent.
                 </p>
                 <p>
-                    I prioritize intellectual rigor and big-picture thinking. In an ecosystem cluttered with surface-level tactics, I manage the entirety of your Google architecture—from front-end ad copy to back-end algorithmic feeding—to ensure sustainable, long-term ROI.
+                    I prioritize intellectual rigor and big-picture thinking. In an ecosystem cluttered with surface-level tactics, I manage the entirety of your Google architecture—from front-end ad copy to back-end algorithmic feeding.
                 </p>
             </div>
         </div>
     </section>
 
     <!-- Methodology Section -->
-    <section id="methodology" class="py-24 px-6 bg-stone-50">
+    <section id="methodology" class="py-24 px-6 bg-[#f5f5f4]">
         <div class="max-w-5xl mx-auto">
             <div class="mb-16">
-                <h2 class="text-3xl font-serif text-stone-900 mb-4">Strategic Execution</h2>
-                <p class="text-stone-600 font-light">Comprehensive mastery over the entire Google ecosystem.</p>
+                <h2 class="text-3xl font-serif text-[#1c1917] mb-4">Strategic Execution</h2>
+                <p class="text-[#57534e] font-light">Comprehensive mastery over the entire Google ecosystem.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Algorithmic Fine-Tuning -->
+                <div class="group bg-white p-10 border border-[#e7e5e4] hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+                    <i data-lucide="network" class="w-8 h-8 mb-6 text-[#1c1917]"></i>
+                    <h3 class="text-xl font-serif text-[#1c1917] mb-4">Algorithmic Fine-Tuning</h3>
+                    <p class="text-sm text-[#57534e] leading-relaxed mb-4">
+                        I utilize advanced data architecture via <strong class="font-medium text-[#1c1917]">GTM</strong> and <strong class="font-medium text-[#1c1917]">GA4</strong> to engineer precise feedback loops. 
+                    </p>
+                    <p class="text-sm text-[#57534e] leading-relaxed">
+                        By feeding high-quality behavioral signals back into Google's machine learning models, I force the algorithm to optimize for your most profitable customer profiles.
+                    </p>
+                </div>
+
+                <!-- Intent-Driven Search -->
+                <div class="group bg-white p-10 border border-[#e7e5e4] hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+                    <i data-lucide="mouse-pointer-2" class="w-8 h-8 mb-6 text-[#1c1917]"></i>
+                    <h3 class="text-xl font-serif text-[#1c1917] mb-4">Intent-Driven Search</h3>
+                    <p class="text-sm text-[#57534e] leading-relaxed">
+                        Capturing high-intent queries through rigorous keyword mapping, exact-match structuring, and dynamic ad copy. I construct search campaigns that intercept users at the exact moment their intent shifts toward a purchasing decision.
+                    </p>
+                </div>
+
+                <!-- E-Commerce Infrastructure -->
+                <div class="group bg-white p-10 border border-[#e7e5e4] hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+                    <i data-lucide="shopping-bag" class="w-8 h-8 mb-6 text-[#1c1917]"></i>
+                    <h3 class="text-xl font-serif text-[#1c1917] mb-4">E-Commerce Infrastructure</h3>
+                    <p class="text-sm text-[#57534e] leading-relaxed">
+                        Seamless integration of <strong class="font-medium text-[#1c1917]">Google Merchant Center</strong> with PMax. I execute strict product feed optimization to ensure inventory is dynamically matched with high-converting queries.
+                    </p>
+                </div>
+
+                <!-- Local Dominance & Audits -->
+                <div class="group bg-white p-10 border border-[#e7e5e4] hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+                    <i data-lucide="microscope" class="w-8 h-8 mb-6 text-[#1c1917]"></i>
+                    <h3 class="text-xl font-serif text-[#1c1917] mb-4">Local Dominance & Audits</h3>
+                    <p class="text-sm text-[#57534e] leading-relaxed">
+                        Total optimization of <strong class="font-medium text-[#1c1917]">GMB</strong> profiles to capture hyper-local search intent. Additionally, I provide forensic, SME-level audits to identify structural inefficiencies and budget drains.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-32 px-6 bg-[#1c1917] text-[#fafaf9] text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-serif mb-6">Partner With an Expert</h2>
+            <p class="text-[#a8a29e] font-light mb-10 text-lg">
+                As an independent consultant, I take on a limited number of freelance clients to ensure absolute structural rigor in every account I touch.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://calendar.app.google/78D8qbSB7pizW5qL7" target="_blank"
+                   class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#fafaf9] text-[#1c1917] rounded-sm font-medium hover:bg-[#e7e5e4] transition-colors">
+                    <i data-lucide="calendar" class="w-4 h-4"></i> Schedule via Calendar
+                </a>
+                <a href="mailto:your-email@gmail.com"
+                   class="inline-flex items-center justify-center gap-2 px-8 py-4 border border-[#57534e] text-[#fafaf9] rounded-sm font-medium hover:bg-white/10 transition-colors">
+                    <i data-lucide="mail" class="w-4 h-4"></i> Send an Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-[#1c1917] border-t border-[#292524] text-center text-sm text-[#57534e] font-light">
+        <p>&copy; 2026 Sukhmandeep Singh. Independent Google Ads Consultant. All frameworks reserved.</p>
+    </footer>
+
+    <!-- Scripts for Icons and Mobile Menu -->
+    <script>
+        lucide.createIcons();
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const links = document.querySelectorAll('.mobile-link');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+        links.forEach(link => { link.addEventListener('click', () => { menu.classList.add('hidden'); }); });
+    </script>
+</body>
+</html>
+
+
+<p class="text-stone-600 font-light">Comprehensive mastery over the entire Google ecosystem.</p>
             </div>
 
             <!-- 2x2 grid to accommodate 4 pillars gracefully -->
