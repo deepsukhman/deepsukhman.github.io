@@ -1,21 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="scroll-smooth">
 <head>
-    <title>PPC Specialist | Google Ads Expert</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukhmandeep Singh | Independent Google Ads Consultant</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display for authoritative headers, Inter for analytical body text -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        stone: {
+                            50: '#fafaf9', 
+                            100: '#f5f5f4',
+                            200: '#e7e5e4',
+                            600: '#57534e', 
+                            900: '#1c1917', 
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background: #f4f4f4; }
-        .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: inline-block; }
-        h1 { color: #1a73e8; } /* Google Blue */
-        .btn { background: #1a73e8; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+        body { background-color: #fafaf9; color: #1c1917; }
+        .fade-in { animation: fadeIn 1.2s cubic-bezier(0.16, 1, 0.3, 1); }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+        .structural-border { border: 1px solid #e7e5e4; }
     </style>
 </head>
-<body>
-    <div class="card">
-        <h1>Google Ads Management & Strategy</h1>
-        <p>I help businesses scale through data-driven Search and Shopping campaigns.</p>
-        <p><b>Specializing in:</b> ROI Optimization, Audit, & Scaling.</p>
-        <br>
-        <a href="mailto:your-email@gmail.com" class="btn">Get a Free Audit</a>
-    </div>
+<body class="antialiased selection:bg-stone-900 selection:text-white">
+
+    <!-- Minimalist Navigation -->
+    <nav class="fixed w-full z-50 bg-stone-50/90 backdrop-blur-sm border-b border-stone-200">
+        <div class="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="font-serif text-2xl font-semibold tracking-tight text-stone-900">Sukhmandeep.</div>
+            <div class="hidden md:flex space-x-10 text-sm font-medium tracking-wide text-stone-600">
+                <a href="#philosophy" class="hover:text-stone-900 transition-colors">Philosophy</a>
+                <a href="#methodology" class="hover:text-stone-900 transition-colors">Methodology</a>
+            </div>
+            <a href="https://calendar.app.google/78D8qbSB7pizW5qL7" target="_blank" class="text-sm font-medium text-stone-900 border-b border-stone-900 pb-1 hover:text-stone-600 hover:border-stone-600 transition-colors">
+                Book a Consultation
+            </a>
+        </div>
+    </nav>
+
+    <!-- Editorial Hero Section -->
+    <section class="min-h-screen flex items-center justify-center px-6 pt-24">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <p class="text-stone-500 tracking-[0.2em] text-xs font-semibold uppercase mb-8">Independent Consultant • Google Ads Ecosystem</p>
+            <h1 class="text-5xl md:text-7xl font-serif font-medium leading-tight mb-8 text-stone-900">
+                Architecting Growth Through <br>
+                <span class="italic text-stone-600">Structural Clarity.</span>
+            </h1>
+            <p class="text-lg text-stone-600 font-light mb-12 max-w-2xl mx-auto leading-relaxed">
+                I provide elite freelance strategy for businesses that demand more than basic campaign management. I integrate deep data analytics, structural engineering, and market psychology to build highly profitable advertising ecosystems.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="https://calendar.app.google/78D8qbSB7pizW5qL7" target="_blank" class="px-8 py-4 bg-stone-900 text-stone-50 rounded-sm text-sm font-medium hover:bg-stone-800 transition-colors flex items-center justify-center gap-2">
+                    Schedule a Strategy Call <i data-lucide="calendar" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Philosophy Section -->
+    <section id="philosophy" class="py-24 px-6 bg-white border-y border-stone-200">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-12 gap-16 items-start">
+            <div class="md:col-span-5">
+                <h2 class="text-4xl font-serif text-stone-900 mb-6 leading-tight">The Analytical <br>Advantage.</h2>
+                <div class="w-12 h-px bg-stone-900 mb-8"></div>
+            </div>
+            <div class="md:col-span-7 space-y-6 text-stone-600 font-light leading-relaxed text-lg">
+                <p>
+                    I am <strong class="font-medium text-stone-900">Sukhmandeep Singh</strong>, an independent Subject Matter Expert (SME) in the Google Ads ecosystem. I partner with select clients to provide high-level, freelance PPC management and strategic restructuring.
+                </p>
+                <p>
+                    With a deep foundation in behavioral marketing and structural data analysis, I possess a unique lens for interpreting the digital landscape. I treat consumer search behavior not as mere metrics, but as complex maps of human intent. This allows me to craft campaigns that intersect precisely with the practical and psychological needs of your target audience—transforming passive browsing into active conversion.
+                </p>
+                <p>
+                    I prioritize intellectual rigor and big-picture thinking. In an ecosystem cluttered with surface-level tactics, I manage the entirety of your Google architecture—from front-end ad copy to back-end algorithmic feeding—to ensure sustainable, long-term ROI.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology" class="py-24 px-6 bg-stone-50">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-3xl font-serif text-stone-900 mb-4">Strategic Execution</h2>
+                <p class="text-stone-600 font-light">Comprehensive mastery over the entire Google ecosystem.</p>
+            </div>
+
+            <!-- 2x2 grid to accommodate 4 pillars gracefully -->
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Service 1: Analytics & Algorithms -->
+                <div class="bg-white p-10 structural-border hover:shadow-lg transition-shadow duration-300">
+                    <i data-lucide="network" class="w-6 h-6 text-stone-900 mb-6"></i>
+                    <h3 class="text-xl font-serif text-stone-900 mb-4">Algorithmic Fine-Tuning</h3>
+                    <p class="text-stone-600 font-light text-sm leading-relaxed mb-4">
+                        In modern PPC, the algorithm dictates success—but it is only as intelligent as the data it consumes. I utilize advanced data architecture via <strong class="font-medium text-stone-900">Google Tag Manager (GTM)</strong> and <strong class="font-medium text-stone-900">Google Analytics (GA4)</strong> to engineer precise feedback loops.
+                    </p>
+                    <p class="text-stone-600 font-light text-sm leading-relaxed">
+                        By feeding high-quality behavioral signals back into Google's machine learning models, I force the algorithm to optimize for your most profitable customer profiles, transforming raw data into a competitive advantage.
+                    </p>
+                </div>
+
+                <!-- Service 2: Intent-Driven Search -->
+                <div class="bg-white p-10 structural-border hover:shadow-lg transition-shadow duration-300">
+                    <i data-lucide="search" class="w-6 h-6 text-stone-900 mb-6"></i>
+                    <h3 class="text-xl font-serif text-stone-900 mb-4">Intent-Driven Search</h3>
+                    <p class="text-stone-600 font-light text-sm leading-relaxed">
+                        Capturing high-intent queries through rigorous keyword mapping, exact-match structuring, and dynamic ad copy. I construct search campaigns that intercept users at the exact moment their intent shifts toward a purchasing decision.
+                    </p>
+                </div>
+
+                <!-- Service 3: E-Commerce Infrastructure -->
+                <div class="bg-white p-10 structural-border hover:shadow-lg transition-shadow duration-300">
+                    <i data-lucide="shopping-bag" class="w-6 h-6 text-stone-900 mb-6"></i>
+                    <h3 class="text-xl font-serif text-stone-900 mb-4">E-Commerce Infrastructure</h3>
+                    <p class="text-stone-600 font-light text-sm leading-relaxed">
+                        Seamless integration of <strong class="font-medium text-stone-900">Google Merchant Center</strong> with Performance Max and Standard Shopping campaigns. I execute strict product feed optimization to ensure your inventory is dynamically matched with the highest-converting queries.
+                    </p>
+                </div>
+
+                <!-- Service 4: Local Search & Audits -->
+                <div class="bg-white p-10 structural-border hover:shadow-lg transition-shadow duration-300">
+                    <i data-lucide="map-pin" class="w-6 h-6 text-stone-900 mb-6"></i>
+                    <h3 class="text-xl font-serif text-stone-900 mb-4">Local Dominance & Audits</h3>
+                    <p class="text-stone-600 font-light text-sm leading-relaxed">
+                        Total optimization of your <strong class="font-medium text-stone-900">Google My Business (GMB)</strong> profile to capture hyper-local search intent. Additionally, I provide forensic, SME-level audits of existing accounts to identify structural inefficiencies and silent budget drains.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-32 px-6 bg-stone-900 text-stone-50 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-serif mb-6">Partner With an Expert</h2>
+            <p class="text-stone-400 font-light mb-10 text-lg">
+                As an independent consultant, I take on a limited number of freelance clients to ensure absolute structural rigor in every account I touch. Let us elevate your advertising from basic tactical execution to high-level strategic dominance.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://calendar.app.google/78D8qbSB7pizW5qL7" target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-stone-50 text-stone-900 rounded-sm font-medium hover:bg-stone-200 transition-colors">
+                    <i data-lucide="calendar" class="w-4 h-4"></i> Schedule via Calendar
+                </a>
+                <a href="mailto:your-email@gmail.com" class="inline-flex items-center justify-center gap-2 px-8 py-4 border border-stone-500 text-stone-50 rounded-sm font-medium hover:bg-stone-800 transition-colors">
+                    <i data-lucide="mail" class="w-4 h-4"></i> Send an Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-stone-900 border-t border-stone-800 text-center text-sm text-stone-500 font-light">
+        <p>&copy; 2026 Sukhmandeep Singh. Independent Google Ads Consultant. All frameworks reserved.</p>
+    </footer>
+
+    <!-- Initialize Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
+
+
