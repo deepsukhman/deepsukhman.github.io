@@ -44,7 +44,8 @@
     <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-[#fafaf9]/90 backdrop-blur-sm border-b border-[#e7e5e4]">
         <div class="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="font-serif text-2xl font-semibold tracking-tight text-[#1c1917]">Sukhmandeep.</div>
+            <!-- Removed the period here -->
+            <div class="font-serif text-2xl font-semibold tracking-tight text-[#1c1917]">Sukhmandeep</div>
             
             <!-- Desktop Nav -->
             <div class="hidden md:flex space-x-10 text-sm font-medium tracking-wide text-[#57534e]">
@@ -72,22 +73,21 @@
         </div>
     </nav>
 
-    <!-- Visual Hero Section (Image Frame) -->
-    <!-- Note: Background color shifted to #111111 to better blend with your specific image -->
-    <section class="pt-32 pb-12 px-6 flex flex-col items-center justify-center bg-[#111111] text-white overflow-hidden border-b border-[#292524]">
-        <div class="max-w-5xl w-full flex justify-center py-12 md:py-20">
+    <!-- Visual Hero Section (Image Frame tightly wrapped) -->
+    <section class="pt-28 pb-8 px-6 flex justify-center bg-[#fafaf9]">
+        <div class="max-w-5xl w-full flex justify-center">
             
             <!-- Responsive Image Placeholder -->
             <img src="hero-banner.png" 
                  alt="Strategic Interface Line Art" 
-                 class="w-full h-auto max-w-4xl opacity-90 transition-transform duration-1000 hover:scale-[1.02]"
+                 class="w-full h-auto max-w-4xl transition-transform duration-1000 hover:scale-[1.02]"
                  onerror="this.onerror=null; this.outerHTML='<div class=\'text-stone-400 text-sm border border-stone-700 p-12 w-full text-center rounded border-dashed\'>[Upload hero-banner.png to your GitHub repository to display image here]</div>';">
             
         </div>
     </section>
 
     <!-- Copy Hero Section -->
-    <section class="py-20 px-6 text-center border-b border-[#e7e5e4] bg-white">
+    <section class="py-16 px-6 text-center border-b border-[#e7e5e4] bg-white">
         <div class="max-w-4xl mx-auto fade-in">
             <p class="text-[#57534e] tracking-[0.2em] text-xs font-semibold uppercase mb-8">Independent Consultant • Google Ads Ecosystem</p>
             <h1 class="text-5xl md:text-7xl font-serif font-medium leading-tight mb-8">
@@ -211,86 +211,6 @@
         const links = document.querySelectorAll('.mobile-link');
         btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
         links.forEach(link => { link.addEventListener('click', () => { menu.classList.add('hidden'); }); });
-    </script>
-</body>
-</html>
-
-
-<p class="text-stone-600 font-light">Comprehensive mastery over the entire Google ecosystem.</p>
-            </div>
-
-            <!-- 2x2 grid to accommodate 4 pillars gracefully -->
-            <div class="grid md:grid-cols-2 gap-8">
-                
-                <!-- Service 1: Analytics & Algorithms -->
-                <div class="bg-white p-10 structural-border hover:shadow-lg transition-shadow duration-300">
-                    <i data-lucide="network" class="w-6 h-6 text-stone-900 mb-6"></i>
-                    <h3 class="text-xl font-serif text-stone-900 mb-4">Algorithmic Fine-Tuning</h3>
-                    <p class="text-stone-600 font-light text-sm leading-relaxed mb-4">
-                        In modern PPC, the algorithm dictates success—but it is only as intelligent as the data it consumes. I utilize advanced data architecture via <strong class="font-medium text-stone-900">Google Tag Manager (GTM)</strong> and <strong class="font-medium text-stone-900">Google Analytics (GA4)</strong> to engineer precise feedback loops.
-                    </p>
-                    <p class="text-stone-600 font-light text-sm leading-relaxed">
-                        By feeding high-quality behavioral signals back into Google's machine learning models, I force the algorithm to optimize for your most profitable customer profiles, transforming raw data into a competitive advantage.
-                    </p>
-                </div>
-
-                <!-- Service 2: Intent-Driven Search -->
-                <div class="bg-white p-10 structural-border hover:shadow-lg transition-shadow duration-300">
-                    <i data-lucide="search" class="w-6 h-6 text-stone-900 mb-6"></i>
-                    <h3 class="text-xl font-serif text-stone-900 mb-4">Intent-Driven Search</h3>
-                    <p class="text-stone-600 font-light text-sm leading-relaxed">
-                        Capturing high-intent queries through rigorous keyword mapping, exact-match structuring, and dynamic ad copy. I construct search campaigns that intercept users at the exact moment their intent shifts toward a purchasing decision.
-                    </p>
-                </div>
-
-                <!-- Service 3: E-Commerce Infrastructure -->
-                <div class="bg-white p-10 structural-border hover:shadow-lg transition-shadow duration-300">
-                    <i data-lucide="shopping-bag" class="w-6 h-6 text-stone-900 mb-6"></i>
-                    <h3 class="text-xl font-serif text-stone-900 mb-4">E-Commerce Infrastructure</h3>
-                    <p class="text-stone-600 font-light text-sm leading-relaxed">
-                        Seamless integration of <strong class="font-medium text-stone-900">Google Merchant Center</strong> with Performance Max and Standard Shopping campaigns. I execute strict product feed optimization to ensure your inventory is dynamically matched with the highest-converting queries.
-                    </p>
-                </div>
-
-                <!-- Service 4: Local Search & Audits -->
-                <div class="bg-white p-10 structural-border hover:shadow-lg transition-shadow duration-300">
-                    <i data-lucide="map-pin" class="w-6 h-6 text-stone-900 mb-6"></i>
-                    <h3 class="text-xl font-serif text-stone-900 mb-4">Local Dominance & Audits</h3>
-                    <p class="text-stone-600 font-light text-sm leading-relaxed">
-                        Total optimization of your <strong class="font-medium text-stone-900">Google My Business (GMB)</strong> profile to capture hyper-local search intent. Additionally, I provide forensic, SME-level audits of existing accounts to identify structural inefficiencies and silent budget drains.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="py-32 px-6 bg-stone-900 text-stone-50 text-center">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-4xl font-serif mb-6">Partner With an Expert</h2>
-            <p class="text-stone-400 font-light mb-10 text-lg">
-                As an independent consultant, I take on a limited number of freelance clients to ensure absolute structural rigor in every account I touch. Let us elevate your advertising from basic tactical execution to high-level strategic dominance.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://calendar.app.google/78D8qbSB7pizW5qL7" target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-stone-50 text-stone-900 rounded-sm font-medium hover:bg-stone-200 transition-colors">
-                    <i data-lucide="calendar" class="w-4 h-4"></i> Schedule via Calendar
-                </a>
-                <a href="mailto:your-email@gmail.com" class="inline-flex items-center justify-center gap-2 px-8 py-4 border border-stone-500 text-stone-50 rounded-sm font-medium hover:bg-stone-800 transition-colors">
-                    <i data-lucide="mail" class="w-4 h-4"></i> Send an Email
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-10 bg-stone-900 border-t border-stone-800 text-center text-sm text-stone-500 font-light">
-        <p>&copy; 2026 Sukhmandeep Singh. Independent Google Ads Consultant. All frameworks reserved.</p>
-    </footer>
-
-    <!-- Initialize Icons -->
-    <script>
-        lucide.createIcons();
     </script>
 </body>
 </html>
